@@ -120,7 +120,7 @@ x_test_co = x_test_co.reshape((x_test_co.shape[0], x_test_co.shape[1]))
 clf_svm = svm.SVC()
 clf_svm.fit(x_train_co, y_train)
 
-# Predict lables based on image data
+# Predict labels based on image data
 y_predict=clf_svm.predict(x_test_co)
 kappa_value = cohen_kappa_score(y_predict, y_test)
 
